@@ -65,5 +65,9 @@ export default {
     */
     extend(config, ctx) {
     }
+  },
+
+  router: {
+    base: '/hig-human-interface-guidelines-portuguese/'
   }
 }
