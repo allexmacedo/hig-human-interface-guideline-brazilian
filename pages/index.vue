@@ -1,27 +1,41 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        HIG
-      </h1>
-      <h2 class="subtitle">
-        A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+	<section class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-9 text-center">
+				<h1>Human Interface Guidelines</h1>
+				<p>Obtenha informações detalhadas em <strong>Português Brasileiro</strong> e recursos de interface do usuário para projetar ótimos aplicativos que se integram perfeitamente às plataformas da Apple.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-10">
+				<div class="row items">
+					<div class="col-12 col-md-6" id="macos">
+						<a href="macos/" title="macOS">
+							<p>macOS</p>
+						</a>
+					</div>
+
+					<div class="col-12 col-md-6" id="ios">
+						<a href="ios/" title="iOS">
+							<p>iOS</p>
+						</a>
+					</div>
+
+					<div class="col-12 col-md-6" id="tvos">
+						<a href="tvos/" title="tvOS">
+							<p>tvOS</p>
+						</a>
+					</div>
+
+					<div class="col-12 col-md-6" id="watchos">
+						<a href="watchos/" title="watchOS">
+							<p>watchOS</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -34,27 +48,21 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+	.items {
+		a {
+			background-color: #fafafa;
+			display: block;
+			cursor: pointer;
+			text-decoration: none;
+			padding: 3em;
+			margin: 2em 1em;
+			text-align: center;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+			p {
+				padding:0px;
+				margin:0px;
+			}
+		}
+	}
 </style>

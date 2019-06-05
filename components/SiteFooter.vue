@@ -14,7 +14,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <ul>
                         <li>
-                            <h3><a href="/macos">macOS</a></h3>
+                            <h3><a href="macos/">macOS</a></h3>
                             <ul>
                                 <li><a href="#">App Architecture</a></li>
                                 <li><a href="#">User Interaction</a></li>
@@ -37,7 +37,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <ul>
                         <li>
-                            <h3><a href="/ios">iOS</a></h3>
+                            <h3><a href="ios/">iOS</a></h3>
                             <ul>
                                 <li><a href="#">App Architecture</a></li>
                                 <li><a href="#">User Interaction</a></li>
@@ -56,7 +56,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <ul>
                         <li>
-                            <h3><a href="/tvos">tvOS</a></h3>
+                            <h3><a href="tvos/">tvOS</a></h3>
                             <ul>
                                 <li><a href="#">Remote and Controllers</a></li>
                                 <li><a href="#">App Architecture</a></li>
@@ -72,7 +72,7 @@
                 <div class="col-12 col-md-3 col-lg-3">
                     <ul>
                         <li>
-                            <h3><a href="watchos">watchOS</a></h3>
+                            <h3><a href="watchos/">watchOS</a></h3>
                             <ul>
                                 <li><a href="#">App Architecture</a></li>
                                 <li><a href="#">User Interaction</a></li>
