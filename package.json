@@ -1,5 +1,5 @@
 {
-  "name": "HIG",
+  "name": "hig",
   "version": "1.0.0",
   "description": "A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS",
   "author": "Alexsander Macedo",
@@ -8,17 +8,19 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0"
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.8.0",
+    "sass-loader": "^7.1.0",
+    "vue-tree-navigation": "^4.0.1",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
-    "push-dir": "^0.4.1"
+    "nodemon": "^1.18.9"
   }
 }

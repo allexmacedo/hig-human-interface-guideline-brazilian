@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _4bdcbaec = () => interopDefault(import('../pages/ios/index.vue' /* webpackChunkName: "pages/ios/index" */))
+const _28afbdf0 = () => interopDefault(import('../pages/macos/index.vue' /* webpackChunkName: "pages/macos/index" */))
+const _e0abafc2 = () => interopDefault(import('../pages/tvos/index.vue' /* webpackChunkName: "pages/tvos/index" */))
+const _6b465cf0 = () => interopDefault(import('../pages/watchos/index.vue' /* webpackChunkName: "pages/watchos/index" */))
 const _0942530c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -73,12 +77,28 @@ const scrollBehavior = function (to, from, savedPosition) {
 export function createRouter() {
   return new Router({
     mode: 'history',
-    base: decodeURI('/hig-human-interface-guideline-portuguese/'),
+    base: decodeURI('/'),
     linkActiveClass: 'nuxt-link-active',
     linkExactActiveClass: 'nuxt-link-exact-active',
     scrollBehavior,
 
     routes: [{
+      path: "/ios",
+      component: _4bdcbaec,
+      name: "ios"
+    }, {
+      path: "/macos",
+      component: _28afbdf0,
+      name: "macos"
+    }, {
+      path: "/tvos",
+      component: _e0abafc2,
+      name: "tvos"
+    }, {
+      path: "/watchos",
+      component: _6b465cf0,
+      name: "watchos"
+    }, {
       path: "/",
       component: _0942530c,
       name: "index"

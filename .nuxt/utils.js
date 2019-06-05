@@ -137,7 +137,7 @@ export async function setContext(app, context) {
 
       payload: context.payload,
       error: context.error,
-      base: '/hig-human-interface-guideline-portuguese/',
+      base: '/',
       env: {}
     }
     // Only set once
