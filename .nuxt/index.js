@@ -10,8 +10,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_nuxticons_0864b514 from 'nuxt_plugin_nuxticons_0864b514' // Source: ./nuxt-icons.js (mode: 'all')
-import nuxt_plugin_axios_e63fc1dc from 'nuxt_plugin_axios_e63fc1dc' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_nuxticons_e47975ac from 'nuxt_plugin_nuxticons_e47975ac' // Source: ./nuxt-icons.js (mode: 'all')
+import nuxt_plugin_axios_3cab0244 from 'nuxt_plugin_axios_3cab0244' // Source: ./axios.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -130,12 +130,12 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_nuxticons_0864b514 === 'function') {
-    await nuxt_plugin_nuxticons_0864b514(app.context, inject)
+  if (typeof nuxt_plugin_nuxticons_e47975ac === 'function') {
+    await nuxt_plugin_nuxticons_e47975ac(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_e63fc1dc === 'function') {
-    await nuxt_plugin_axios_e63fc1dc(app.context, inject)
+  if (typeof nuxt_plugin_axios_3cab0244 === 'function') {
+    await nuxt_plugin_axios_3cab0244(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

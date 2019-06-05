@@ -102,7 +102,7 @@
         margin-top: 40px;
 
         .info {
-            background: darken(#f7f7f7, 5%);
+            background: darken(#f2f2f2, 1.5%);
             margin-bottom: 40px;
             padding: 30px 0;
 

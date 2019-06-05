@@ -41,7 +41,20 @@
 <script>
 
 export default {
-
+	data () {
+		return {
+			title: 'HIG'
+		}
+	},
+	head () {
+		return {
+			title: this.title,
+			titleTemplate: '%s - Human Interface Guidelines em Português Brasileiro.',
+			meta: [
+				{ hid: 'description', name: 'description', content: 'Teste de tag'}
+			]
+		}
+	}
 }
 </script>
 

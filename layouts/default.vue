@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <site-header />
-    <nuxt />
-    <site-footer />
-  </div>
+	<div>
+		<site-header />
+		<nuxt />
+		<site-footer />
+	</div>
 </template>
 
 <script>
@@ -14,6 +14,10 @@
         SiteHeader,
         SiteFooter
       },
-        
+      head () {
+      return {
+        titleTemplate: '%s - Human Interface Guidelines'
+        }
+      }
     }
 </script>
