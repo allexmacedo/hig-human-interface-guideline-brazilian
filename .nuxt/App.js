@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": _6f6c098b }
 
 export default {
-  head: {"title":"hig","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"hig"},{"hid":"author","name":"author","content":"Alexsander Macedo"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"hig"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"hig"},{"hid":"og:description","name":"og:description","property":"og:description","content":"A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS"}],"script":[],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Fbootstrap\u002F4.3.1\u002Fcss\u002Fbootstrap.min.css"},{"rel":"manifest","href":"\u002Fhig-human-interface-guidelines-portuguese\u002F_nuxt\u002Fmanifest.a019a970.json"},{"rel":"shortcut icon","href":"\u002Fhig-human-interface-guidelines-portuguese\u002F_nuxt\u002Ficons\u002Ficon_64.9mld2VBMsQ$.png"},{"rel":"apple-touch-icon","href":"\u002Fhig-human-interface-guidelines-portuguese\u002F_nuxt\u002Ficons\u002Ficon_512.9mld2VBMsQ$.png","sizes":"512x512"}],"style":[],"htmlAttrs":{"lang":"en"}},
+  head: {"title":"hig","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"},{"hid":"description","name":"description","content":"A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"hig"},{"hid":"author","name":"author","content":"Alexsander Macedo"},{"hid":"theme-color","name":"theme-color","content":"#fff"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"hig"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"hig"},{"hid":"og:description","name":"og:description","property":"og:description","content":"A Brazilian Portuguese version the Human Interface Guidelines for iOS, macOS, tvOS and watchOS"}],"script":[],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"favicon.ico"},{"rel":"shortcut icon","href":"favicon.ico"},{"rel":"mask-icon","href":"apple-logo.svg","color":"#333333"},{"rel":"stylesheet","href":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Fbootstrap\u002F4.3.1\u002Fcss\u002Fbootstrap.min.css"},{"rel":"manifest","href":"\u002Fhig-human-interface-guidelines-portuguese\u002F_nuxt\u002Fmanifest.a019a970.json"},{"rel":"apple-touch-icon","href":"\u002Fhig-human-interface-guidelines-portuguese\u002F_nuxt\u002Ficons\u002Ficon_512.9mld2VBMsQ$.png","sizes":"512x512"}],"style":[],"htmlAttrs":{"lang":"en"}},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })
@@ -37,7 +38,7 @@ export default {
       domProps: {
         id: '__nuxt'
       }
-    }, [loadingEl, transitionEl])
+    }, [loadingEl, h(NuxtBuildIndicator), transitionEl])
   },
   data: () => ({
     isOnline: true,
@@ -96,6 +97,8 @@ export default {
     },
 
     setLayout(layout) {
+      if(layout && typeof layout !== 'string') throw new Error('[nuxt] Avoid using non-string value as layout property.')
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }
