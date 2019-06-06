@@ -2,11 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _6c07423e = () => interopDefault(import('../pages/ios/index.vue' /* webpackChunkName: "pages/ios/index" */))
-const _13bc40a4 = () => interopDefault(import('../pages/macos/index.vue' /* webpackChunkName: "pages/macos/index" */))
-const _3c687eeb = () => interopDefault(import('../pages/tvos/index.vue' /* webpackChunkName: "pages/tvos/index" */))
-const _7585fab8 = () => interopDefault(import('../pages/watchos/index.vue' /* webpackChunkName: "pages/watchos/index" */))
-const _4dc3ecc0 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _4bdcbaec = () => interopDefault(import('../pages/ios/index.vue' /* webpackChunkName: "pages/ios/index" */))
+const _28afbdf0 = () => interopDefault(import('../pages/macos/index.vue' /* webpackChunkName: "pages/macos/index" */))
+const _e0abafc2 = () => interopDefault(import('../pages/tvos/index.vue' /* webpackChunkName: "pages/tvos/index" */))
+const _6b465cf0 = () => interopDefault(import('../pages/watchos/index.vue' /* webpackChunkName: "pages/watchos/index" */))
+const _0942530c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
 
@@ -84,23 +84,23 @@ export function createRouter() {
 
     routes: [{
       path: "/ios",
-      component: _6c07423e,
+      component: _4bdcbaec,
       name: "ios"
     }, {
       path: "/macos",
-      component: _13bc40a4,
+      component: _28afbdf0,
       name: "macos"
     }, {
       path: "/tvos",
-      component: _3c687eeb,
+      component: _e0abafc2,
       name: "tvos"
     }, {
       path: "/watchos",
-      component: _7585fab8,
+      component: _6b465cf0,
       name: "watchos"
     }, {
       path: "/",
-      component: _4dc3ecc0,
+      component: _0942530c,
       name: "index"
     }],
 
